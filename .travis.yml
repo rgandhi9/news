@@ -1,7 +1,7 @@
 services:
   - docker
 script:
-  - docker image build -t rgandhi9/imagetest .
+  - docker image build -t 9docker9/imagetest .
 delpoy:
   provider: script
   script: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker push 9docker9/imagetest
